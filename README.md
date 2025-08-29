@@ -43,19 +43,6 @@ Project ini dibuat sebagai syarat test Backend Developer di PT. Cazh Teknologi I
 
 ---
 
-## 📂 Struktur Project
-
-src/
-├── config/ # Konfigurasi Supabase Client
-├── controllers/ # Business logic untuk products & transactions
-├── middlewares/ # Error handler & validator middleware
-├── models/ # Query ke Supabase
-├── routes/ # Endpoint routes
-├── schema/ # Skema validasi (Zod)
-└── index.js # Entry point aplikasi
-
----
-
 ## 🛠️ Instalasi dan Penggunaan
 
 ### 1. Clone Repository
