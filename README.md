@@ -52,13 +52,17 @@ https://github.com/novastellaa/test-CAZH-posSystem.git
 cd mini-pos-api
 ```
 
-### 2.  Install Depedencies
+### 2. Setup Database
+
+Copy schema.sql in your SQL Editor (Supabase project).
+
+### 3.  Install Depedencies
 
 ```bash
 npm install
 ```
 
-### 3. Setup Environment Variables
+### 4. Setup Environment Variables
 
 ```bash
 PORT=3000
@@ -66,7 +70,7 @@ SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-anon-or-service-role-key
 ```
 
-### 4. Jalankan Server
+### 5. Jalankan Server
 
 ```bash
 npm run dev
