@@ -48,7 +48,7 @@ Project ini dibuat sebagai syarat test Backend Developer di PT. Cazh Teknologi I
 ### 1. Clone Repository
 
 ```bash
-https://github.com/novastellaa/test-CAZH-posSystem.git
+git clone https://github.com/novastellaa/test-CAZH-posSystem.git
 cd mini-pos-api
 ```
 
