@@ -54,7 +54,7 @@ cd mini-pos-api
 
 ### 2. Setup Database
 
-Copy `schema.sql` in your SQL Editor (Supabase project).
+Salin `schema.sql` di SQL Editor (Supabase project kamu).
 
 ### 3.  Install Depedencies
 
