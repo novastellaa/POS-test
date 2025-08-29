@@ -185,5 +185,3 @@ Content-Type: application/json
 ## ✏️ Author
 
 Muhammad Nova Stella
-
----
