@@ -23,7 +23,7 @@ Project ini dibuat sebagai syarat test Backend Developer di PT. Cazh Teknologi I
 
 - **Validasi**
   - Menggunakan [Zod](https://zod.dev) untuk validasi skema body request
-  - Error handling yang rapi untuk menampilkan pesan kesalahan
+  - Error handling yang untuk menampilkan pesan kesalahan
 
 ---
 
@@ -38,7 +38,6 @@ Project ini dibuat sebagai syarat test Backend Developer di PT. Cazh Teknologi I
   - [express-validator](https://express-validator.github.io/docs/) (basic validation rules)
 - **Middleware:**
   - `morgan` (HTTP request logger)
-  - `cors` (Cross-Origin Resource Sharing)
   - Custom `errorHandler` & `validate` middleware
 
 ---
@@ -111,10 +110,44 @@ POST /api/products
 Content-Type: application/json
 
 {
-  "name": "Teh Botol",
-  "price": 5000,
-  "stock": 50
+    "name": "cireng",
+    "price": 1000,
+    "stock": 10
+} 
+```
+
+### Ambil Data Produk
+
+```bash
+GET /api/products
+Content-Type: application/json
+```
+
+### Ambil Data Produk by ID
+
+```bash
+GET /api/products/:id
+Content-Type: application/json
+```
+
+### Update Data Produk
+
+```bash
+PUT /api/products/:id
+Content-Type: application/json
+
+{
+    "name": "rawon",
+    "price": 10000,
+    "stock": 10
 }
+```
+
+### Hapus Data Produk
+
+```bash
+DELETE /api/products/:id
+Content-Type: application/json
 ```
 
 ### Tambah Transaksi
@@ -124,12 +157,29 @@ POST /api/transactions
 Content-Type: application/json
 
 {
-  "items": [
-    { "product_id": "uuid-produk-1", "quantity": 2 },
-    { "product_id": "uuid-produk-2", "quantity": 1 }
-  ]
+    "items":[
+        {
+            "product_id" : "uuid-produk1",
+            "quantity" : 2
+        }
+    ]
 }
 ```
+
+### Ambil Data Transaksi
+
+```bash
+GET /api/transactions
+Content-Type: application/json
+```
+
+### Ambil Data Transaksi by ID
+
+```bash
+GET /api/transactions/:id
+Content-Type: application/json
+```
+
 ---
 
 ## ✏️ Author
