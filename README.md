@@ -61,8 +61,8 @@ src/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/pos-api.git
-cd pos-api
+[git clone https://github.com/username/pos-api.git](https://github.com/novastellaa/test-CAZH-posSystem.git)
+cd mini-pos-api
 ```
 
 ### 2.  Install Depedencies
