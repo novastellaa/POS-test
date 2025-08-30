@@ -51,7 +51,6 @@ export async function updateProduct(req, res, next) {
         res.json({
             success: true,
             message: "Product updated successfully",
-            product: updated
         });
     } catch (err) {
         next(err);
@@ -71,7 +70,6 @@ export async function deleteProduct(req, res, next) {
         res.json({
             success: true,
             message: "Product deleted successfully",
-            product: deleted
         });
     } catch (err) {
         next(err);

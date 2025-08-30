@@ -56,6 +56,21 @@ async function createTransaction({ items }) {
     };
 }
 
+
+// async function createTransaction({ items }) {
+//     const { data, error } = await supabase.rpc(
+//         'create_transaction_with_items', { items: JSON.stringify(items) }
+//     );
+
+//     if (error) {
+//         console.error("RPC Error:", error);
+//         throw { status: 500, message: error.message || "Transaction failed" };
+//     }
+
+//     return data;
+// };
+
+
 async function getAllTransactions() {
     const { data, error } = await supabase
         .from('transactions')
