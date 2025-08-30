@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "57f1f74b-eb33-47fc-b6ce-cb7d71b1e082",
+		"name": "test-cazh-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29673433"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mie kocok\",\r\n    \"price\": 12000,\r\n    \"stock\": 10\r\n} "
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bakso\",\r\n    \"price\": 10000,\r\n    \"stock\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bakso\",\r\n    \"price\": 10000,\r\n    \"stock\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/6c1c2815-ce3f-4f16-a49d-276253c21e74",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"6c1c2815-ce3f-4f16-a49d-276253c21e74"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bakso\",\r\n    \"price\": 10000,\r\n    \"stock\": 10\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/6c1c2815-ce3f-4f16-a49d-276253c21e74",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"6c1c2815-ce3f-4f16-a49d-276253c21e74"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bakso\",\r\n    \"price\": 10000,\r\n    \"stock\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/fbe5bc9a-899b-4645-a710-077f59bc363e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"fbe5bc9a-899b-4645-a710-077f59bc363e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transaction",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\":[\r\n        {\r\n            \"product_id\" : \"6c1c2815-ce3f-4f16-a49d-276253c21e74\",\r\n            \"quantity\" : 2\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bakso\",\r\n    \"price\": 10000,\r\n    \"stock\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bakso\",\r\n    \"price\": 10000,\r\n    \"stock\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer JCXvkjGiACxo4DGiHg8zMpBc3-WPP_eCVSVl9DtTl4Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\":[\r\n        {\r\n            \"product_id\" : \"6c1c2815-ce3f-4f16-a49d-276253c21e74\",\r\n            \"quantity\" : 2\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/transactions/6e5ec9cb-60a9-405c-991c-4c37ca68e1e2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"transactions",
+								"6e5ec9cb-60a9-405c-991c-4c37ca68e1e2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
